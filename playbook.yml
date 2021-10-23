@@ -67,6 +67,13 @@
         name: git
         state: latest
 
+    - name: Update do Terraform
+      apt:
+        name: terraform
+        state: latest
+      tags: 
+        - terraform         
+
     ############# Instalação do AWS CLI
 
     - name: Verificando se o AWS CLI está instalado
